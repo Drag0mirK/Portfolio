@@ -1,0 +1,168 @@
+
+@media screen and (width >= 1200px) 
+{
+    .Hamburger-menu
+    {
+        display: none;
+    }
+}
+@media screen and (width < 1200px) 
+{
+
+.Hide-on-mobilie
+    {
+        display: none;
+    }
+   .Home-Content-holder
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-image
+    {
+        width: 350px;
+        height: 350px;
+    }
+    .about-section-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    #Projects
+    {
+        margin-top: 30vh;
+    }
+    .projects-cards-container
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    #Contacts
+    {
+        margin-top: 40vh;
+    }
+}
+@media screen and (width <= 800px) 
+{
+    #Home
+    {
+        margin-bottom: 20vh;
+    }
+    .projects-cards-container
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    #Projects
+    {
+        margin-top: 70vh;
+    }
+    #Contacts
+    {
+        margin-top: 105vh;
+    }
+    .contacts-container
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .arrow{
+        display: none;
+    }
+}
+@media screen and (width <= 768px)
+{
+    #About
+    {
+        margin: 0 1rem;
+       
+    }
+} 
+@media screen and (width <= 500px) 
+{
+    section
+    {
+        margin: 0 4rem;
+    }
+    /*Home section*/
+    #Home
+    {
+        margin-bottom: 20rem;
+    }
+    .Home-Content-holder
+    {
+        padding: 20rem 0 0 0;
+    }
+    .profile-image
+    {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .sidebar
+    {
+        min-width: 100%;
+    }
+    .arrow
+    {
+        display: none;
+    }
+    /*About section*/
+    #About
+    {
+        margin: 0 1rem;
+        margin-bottom: 46rem;
+    }
+    .cards-container
+    {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+    /*Project section*/
+    #Projects
+    {
+        margin-bottom: 89rem ;
+        
+    }
+    .project-card
+    {
+        padding: 4rem 1rem;
+    }
+    .project-card:hover
+    {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    .project-image-container
+    {
+        margin-bottom: 2.5rem;
+    }
+    /*Contacts section*/
+    #Contacts
+    {
+        margin: 0 1rem;
+    }
+    .contacts-container
+    {
+        width: 100%;
+        padding: 4rem 0.4rem;
+        overflow: hidden;
+       
+    }
+    .container a
+    {
+       font-size: 16px;
+    }
+    /*Back to top button*/
+    #myBtn
+    {
+        background-color: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(3px);
+    }
+    /*Sidebar*/
+    .sidebar
+    {
+        display: flex;
+        flex-direction: column;
+    }
+}

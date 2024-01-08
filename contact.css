@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Kalnia:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,700;1,700&family=Rubik+Scribble&family=Saira+Extra+Condensed:wght@200;300;400;500;600;700&family=Shizuru&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image: url(Pictures/bk3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    font-family: 'Roboto';
+}
+.contact-wrapper
+{
+display: flex;
+margin: auto;
+height: 860px;
+}
+.left
+{
+    background-color: white;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 40px;
+    border-radius: 30px 0 0 30px;
+    box-shadow: -7px 10px 13px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: -7px 10px 13px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -7px 10px 13px -1px rgba(0,0,0,0.75);
+}
+.left h3
+{
+    color: rgb(104, 18, 161);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 30px 0 0 30px;
+}
+.left img
+{
+    margin-top: -40px;
+    width: 370px;
+    padding-left: 35px;
+}
+.link-holder
+{
+    margin: 0 0 20px 20px;
+}
+.link-holder h6
+{
+    font-size: 20px;
+    color: rgb(134, 26, 206);
+}
+.link-holder ul
+{
+    margin-top: 10px;
+    display: flex;
+    column-gap: 30px;
+    font-size: 40px;
+}
+.link-holder ul li
+{
+    list-style: none;
+}
+.link-holder ul li a i
+{
+     transition: 0.6s;
+}
+.link-holder ul li a i:hover
+{
+    color: white;
+    background-color:rgb(134, 26, 206);
+    padding:10px;
+    border-radius: 6px;
+}
+.right
+{
+    background-color:rgba(144, 29, 221, 0.24);
+    backdrop-filter: blur(10px);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 30px 30px 0;
+    position: relative;
+}
+.right h3
+{
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    padding: 35px 0 0 30px;
+    margin-bottom:10px;
+}
+.right form
+{
+display: flex;
+flex-direction: column;
+row-gap: 30px;
+width: 500px;
+padding-left:20px;
+}
+.input-box
+{
+display: flex;
+flex-direction: column;
+row-gap: 25px;
+padding: 15px 15px; 
+}
+.field .item
+{
+    width: 100%;
+    padding: 11px 0;
+    border: 2px solid white;
+    border-radius: 30px;
+    background: transparent;
+    outline: none;
+    font-size: 18px;
+    color: white;
+}
+.field.error .item
+{
+border-color: #d93025;
+}
+.field .error-txt
+{
+    color:#d93025;
+    padding-top: 7px;
+    margin-left: 15px;
+    font-size: 17px;
+    display: none;
+}
+.field.error .error-txt
+{
+    display: block;
+}
+.field .item::placeholder
+{
+color: white;
+padding:0 0 0 10px;
+}
+.field .item textarea
+{
+    width: 300px;
+    
+}
+.textarea-field
+{
+    padding:0 18px;
+}
+form .textarea-field .item
+{
+    resize: none;
+}
+form button
+{
+    position: absolute;
+    bottom: 3%;
+    right:40%;
+    width: 150px;
+    padding: 18px 10px;
+    border:2px solid white;
+    border-radius: 10px;
+    background-color: white;
+    color: rgb(144, 29, 221);
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.6s;
+}
+form button:hover
+{
+    border-radius:17px;
+    background-color:rgb(144, 29, 221);
+    color: white;
+}
+
+
+
+@media (max-width:600px)
+{
+    .contact-wrapper
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .left
+    {
+        border-radius: 0;
+        width: 100%;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .right
+    {
+        border-radius: 0;
+        background-color:rgb(144, 29, 221);
+        padding-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+        padding-bottom: 130px;
+    }
+    .form-holder
+    {
+        max-width:400px;
+    }
+}

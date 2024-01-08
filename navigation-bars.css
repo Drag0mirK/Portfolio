@@ -1,0 +1,105 @@
+
+li
+{
+list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+/*Top navigation bar*/
+#Desktop-navbar,
+.desktop-links
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+.desktop-links
+{
+    gap: 2rem;
+   align-items: center;
+}
+.desktop-links a
+{
+    font-size: 1.5rem;
+    text-decoration-color:white ;
+}
+.desktop-links a:hover
+{
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(173, 172, 172);
+}
+.logo
+{
+    font-size: 2rem;
+}
+.logo:hover
+{
+    cursor: default;
+}
+/*Side navigation bar style*/
+.sidebar
+{
+position: fixed;
+top: 0;
+right: 0;
+background-color: rgba(153, 151, 151, 0.685);
+backdrop-filter: blur(10px);
+height: 100%;
+width: 250px;
+z-index: 100;
+display: none;
+}
+.sidebar-links
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+   
+}
+.sidebar-links li
+{
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+.sidebar-links li a
+{
+    font-size: 1.3rem;
+}
+
+.sidebar-links li:hover
+{
+    background-color: gray;
+    border-bottom:1px solid blue ;
+    cursor: pointer;
+}
+.sidebar-links li:hover a
+{
+    color: white;
+}
+
+/*Open and closing menu style*/
+.Hamburger-menu
+{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.Hamburger-menu:hover
+{
+    transform: scale(1.5);
+}
+.closing-menu
+{
+    cursor: pointer;
+    margin: 15px;
+}
+
+

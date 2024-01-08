@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media-queries.css">
+    <link rel="stylesheet" href="navigation-bars.css">
+    <script src="https://kit.fontawesome.com/f18d074bd2.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><span>&uarr;</span></button>
+
+    <nav class="sidebar">
+        <div class="closing-menu" onclick="CloseSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="24" viewBox="0 0 384 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#000000" d="M376.6 84.5c11.3-13.6 9.5-33.8-4.1-45.1s-33.8-9.5-45.1 4.1L192 206 56.6 43.5C45.3 29.9 25.1 28.1 11.5 39.4S-3.9 70.9 7.4 84.5L150.3 256 7.4 427.5c-11.3 13.6-9.5 33.8 4.1 45.1s33.8 9.5 45.1-4.1L192 306 327.4 468.5c11.3 13.6 31.5 15.4 45.1 4.1s15.4-31.5 4.1-45.1L233.7 256 376.6 84.5z"/></svg></div>
+            <ul class="sidebar-links">
+                <li><a href="#top">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contacts">Contacts</a></li>
+            </ul>
+    </nav>
+
+<nav id="Desktop-navbar">
+    <div class="logo">Drago's <span>Coding</span></div>
+        <ul class="desktop-links">
+            <li class="Hide-on-mobilie"><a href="#top">Home</a></li>
+            <li class="Hide-on-mobilie"><a href="#About">About</a></li>
+            <li class="Hide-on-mobilie"><a href="#Projects">Projects</a></li>
+            <li class="Hide-on-mobilie"><a href="#Contacts">Contacts</a></li>
+            <li class="Hamburger-menu" onclick="OpenSidebar()"><svg xmlns="http://www.w3.org/2000/svg" height="22" width="24" viewBox="0 0 448 512"><path fill="#000000" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg></li>
+        </ul>
+</nav>
+
+<section id="Home">
+    <div class="Home-Content-holder">
+        <div class="image-holder">
+            <img class="profile-image" src="Pictures/Screenshot 2024-01-06 170451.png" >
+        </div>
+            <div class="content">
+                <p class="First-line">Hello, I'm</p>
+                <h1 class="Title">Dragomir Kapitanski</h1>
+                <p class="Second-line">Self taugh Web Developer <span class="color">&</span> Computer technition</p>
+                
+                <div class="buttons">
+                    <button class="btn color-1"><a href="Pictures/Dragomir's CV.pdf" download>Download CV</a></button>
+                    <button class="btn color-2"><a href="Contactme.html" target="_blank">Contact me</a></button>
+                </div>
+
+                <div class="Logos">
+                    <a href="https://github.com/Drag0mirK" target="_blank"><img class="logo" src="Pictures/github-logo.png" alt="Github" ></a>
+                    <a href="https://www.linkedin.com/in/dragomir-kapitanski-bb7b15271/" target="_blank"><img class="logo" src="Pictures/Linked in  logo.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <img src="Pictures/arrow.png" alt="" class="logo arrow"style="cursor: pointer;" onclick="location.href='./#About'">
+</section>
+
+<section id="About">
+    <p class="First-line">Get To Know More</p>
+    <h1 class="Title">About Me</h1>
+
+    <div class="about-section-container">
+        <div class="about-image-container">
+            <img class="profile-image" src="Pictures/aboue-sec.jpg" alt="about-picture">
+        </div>
+        <div class="about-content-container">
+            <div class="cards-container">
+                <div class="card">
+                    <img class="logo" src="Pictures/experience.png" alt="experience">
+                    <h3>Experience</h3>
+                    <p>1+ years <br>Web Developer</p>
+                </div>
+                <div class="card">
+                    <img class="logo" src="Pictures/education.png" alt="educartion">
+                    <h3>Education</h3>
+                    <p>certificate prof. degree<br>B.Computer knowedge</p>
+                </div>
+            </div>
+            <div class="description-container">
+                <p>👋 Hello! I'm Dragomir Kapitanski, a 19-year-old college student based in Sofia, Bulgaria. 💻 While I'm a certified computer technician, my true passion lies in website programming, which I actively pursue in my spare time. 🌐 With a thirst for knowledge, I'm captivated by various IT-related subjects.Besides the languages for Web Development i also have experience in other languages such as C#,C++ even if it is not that much.Let's dive into the realm of technology together!</p>
+            </div>
+        </div>
+    </div>
+    <img src="Pictures/arrow.png" alt="" class="logo arrow" style="cursor: pointer;" onclick="location.href='./#Projects'">
+</section>
+
+<section id="Projects">
+    <p class="First-line">Browse My Recent</p>
+    <h1 class="Title">PROJECTS</h1>
+
+    <div class="projects-cards-container">
+        <div class="project-card">
+           <div class="project-image-container">
+                <img src="Pictures/Project 1.png" alt="Project 1">
+           </div>
+           <h2 class="Project-title">Project One</h2>
+           <div class="view-project-buttons">
+            <button class="Github"><a href="https://github.com/Drag0mirK/Demon-Slayers-Website" target="_blank">Github</a></button>
+            <button class="Demo"><a href="https://drag0mirk.github.io/Demon-Slayers-Website/" target="_blank">Live Demo</a></button>
+           </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-image-container">
+                 <img src="Pictures/Project 2.png" alt="Project-2">
+            </div>
+            <h2 class="Project-title">Project Two</h2>
+            <div class="view-project-buttons">
+             <button class="Github"><a href="https://github.com/Drag0mirK/CV" target="_blank">Github</a></button>
+             <button class="Demo"><a href="https://drag0mirk.github.io/CV/" target="_blank">Live Demo</a></button>
+            </div>
+         </div>
+
+         <div class="project-card">
+            <div class="project-image-container">
+                 <img src="Pictures/Project 3.png" alt="Project 3">
+            </div>
+            <h2 class="Project-title">Project Three</h2>
+            <div class="view-project-buttons">
+             <button class="Github"><a href="" target="_blank">Github</a></button>
+             <button class="Demo"><a href="" target="_blank">Live Demo</a></button>
+            </div>
+         </div>
+    </div>
+    <img src="Pictures/arrow.png" alt="" class="logo arrow" style="cursor: pointer;" onclick="location.href='./#Contacts'">
+</section>
+
+<section id="Contacts">
+    <p class="First-line">Get in Touch</p>
+    <h1 class="Title">Contact Me</h1>
+
+    <div class="contacts-container">
+        <div class="container">
+            <img class="logo" src="Pictures/gmail.png" alt="gmail-img">
+            <p><a href="mailto:dragomirkapitanski04@gmail.com" target="_blank">dragomirkapitanski04@gmail.com</a></p>
+        </div>
+        <div class="container">
+            <img class="logo" src="Pictures/instagram-img.png" alt="instagram-img">
+            <p><a href="https://www.instagram.com/d_kapitana/" target="_blank">Instagram</a></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+        <nav>
+            <div class="navigation-links-container">
+                <ul class="desktop-links">
+                    <li class="Hide-on-mobilie"><a href="#Home">Home</a></li>
+                    <li class="Hide-on-mobilie"><a href="#About">About</a></li>
+                    <li class="Hide-on-mobilie"><a href="#Projects">Projects</a></li>
+                    <li class="Hide-on-mobilie"><a href="#Contacts">Contacts</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Dragomir Kapitanski. All Rights Reserved.</p>
+</footer>
+
+
+<script src="java-script.js"></script>
+<script src="backtotop.js"></script>
+
+</body>
+</html>
